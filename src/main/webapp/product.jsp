@@ -11,14 +11,23 @@
 <LINK href="theme/Master.css" rel="stylesheet"
             type="text/css">
 <TITLE>product.html</TITLE>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
 </HEAD>
 <BODY bgcolor=skyblue>
+
+<jsp:include page="nav.jsp"></jsp:include>
 <CENTER>
 <TABLE>
 <TR>
-<TD><IMG border="0" src="1.jpg" width="172" height="141"></TD>
-<TD><IMG border="0" src="2.jpg" width="172" height="141"></TD>
-<TD><IMG border="0" src="3.jpg" width="172" height="141"></TD>
+<TD><IMG border="0" src="image/1.jpg" width="172" height="141"></TD>
+<TD><IMG border="0" src="image/2.jpg" width="172" height="141"></TD>
+<TD><IMG border="0" src="image/3.jpg" width="172" height="141"></TD>
 </TR>
 <TR>
 <TD align=center><INPUT type=checkbox name=c1></TD>
@@ -48,6 +57,12 @@
 </TABLE>
 </form>
 <P></P>
+
+ <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 </BODY></CENTER>
 
 

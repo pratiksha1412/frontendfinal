@@ -22,7 +22,7 @@ public class homeCntroller {
 	}
 		
 		@RequestMapping("/validate")
-		public String validate(@RequestParam(name="userID")String id,@RequestParam(name="password") String pwd,Model model)
+		public String validate(@RequestParam(name="Username")String id,@RequestParam(name="Password") String pwd,Model model)
 		{
 		
 		// HIT THE DB TO VALIDATE
@@ -300,7 +300,7 @@ public class homeCntroller {
 	}*/
 		
 		/*@RequestMapping("/validate")
-		public String validate(@RequestParam(name="userID")String id,@RequestParam(name="password") String pwd,Model model)
+		public String validate(@RequestParam(name="Username")String id,@RequestParam(name="Password") String pwd,Model model)
 		{
 		
 		// HIT THE DB TO VALIDATE
@@ -317,4 +317,5 @@ public class homeCntroller {
 		}
 	}
 		
-		}*/
+		}
+*/

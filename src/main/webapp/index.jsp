@@ -29,7 +29,7 @@
  <script src="https://use.fontawesome.com/2de34b56b4.js"></script>
 </head>
 
-<body style="background-image:url(image/8.jpg)">
+<body >
   <!-- <a href="login1.jsp">log in</a><br>
  <a href="register.jsp">register</a><br>
  <a href="signup.jsp">sign up</a><br>
@@ -75,6 +75,11 @@
 <c:if test="${isuserclickedcart} ">
 <jsp:include page="cart.jsp"></jsp:include>
 </c:if>
+
+<c:if test="${!empty selectedProduct.name} ">
+<jsp:include page="./selectedProduct.jsp"></jsp:include>
+</c:if>
+
 
 <%-- <jsp:include page="nav.jsp"></jsp:include>
  --%>

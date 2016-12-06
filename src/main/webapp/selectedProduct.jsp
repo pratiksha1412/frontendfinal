@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+<title>Selected products</title>
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -13,49 +13,39 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 </head>
+<body>
 
-
-
-
-<body bgcolor="#ffffff">
 <jsp:include page="nav.jsp"></jsp:include>
-<CENTER>
-<p>
-
-
-
-<%--  <jsp:include page="nav.jsp" flush="true"/ --%> --%>
-<p>
-<h1>Please enter your shipping information</h1>
-<p>
-<form action="/shoppingcart/CheckoutServlet" method="post">
+<c:set var="imageFolder" value="D:\\shoppingcart\\img\\"/>
 
 <table>
-<tr><td>Name:</td><td><input type="text" name="name"></td></tr>
-<tr><td>Address:</td><td><input type="text" name="address1"></td>
-</tr>
-<tr><td></td><td><input type="text" name="address2"></td></tr>
-<tr><td>City:</td><td><input type="text" name="city"></td></tr>
-    <td>State:</td>
-    <td><input type="text" name="state" size=2 maxlength=2></td></tr>
-<tr><td>Postal Code (Zip in U.S.):</td>
-    <td><input type="text" name="postalCode"></td></tr>
-<tr><td>Country:</td><td><input type="text" name="country"></td></tr>
-<tr></tr>
-<tr><td>Email Address:</td><td><input type="text" name="email">
-</td></tr>
-</table>
+<tr>
+<td>
+<img alt="${selectedProduct.name }"
+  src="${imageFolder} ${selectedProduct.id}.jpg">
+</td>
 
-<input type="submit" value="Complete Order">
-</form>
-
-</html>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<td>
+<a class="col-xs-offset-s btn btn-lg btn-success"
+  href="cart_checkout">Checkout</a></td>
+  
+  <td></td>
+  </tr>
+  
+  <tr>
+  <td>Price : ${selectedProduct.price }</td>
+  </tr>
+  <tr>
+  <td>
+  <a class="icone-shopping-cart" href="cart/add/${selectedProduct.id}">Add to cart </a></td>
+  </tr>
+  </table> 
+  
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  
 
-
-
-
-</body></CENTER>
+</body>
+</html>

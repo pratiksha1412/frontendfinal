@@ -4,19 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Login</title>
+<title>server down</title>
 </head>
 <body>
 
-<%-- ${errorMessage} --%>
-<form>
-<fieldset>
-User Name:<input type="text" name="userID"><br>
-Password:<input type="password" name="password"> <br>
-<input type="submit" value="login">
-</fieldset>
+<div class="alert alert-danger">
+<strong> The requested server is down.plz contact your administrator</strong>
+</div>
 
-</form>
-
+<div class="alert alert-info">${message} ${exception } </div>
 </body>
 </html>

@@ -53,7 +53,7 @@ div {
 </head>
 <body>
 
-
+<jsp:include page="nav.jsp"></jsp:include>
 
 <h2>Sign Up<h2>
 <h3>It's free and always will be.</h3>

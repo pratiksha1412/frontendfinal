@@ -22,33 +22,7 @@
     <h1></h1>
     
     <jsp:include page="nav.jsp"></jsp:include>
-    <!-- 
-     <nav class="navbar navbar-inverse  navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">GLAMORUS</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="home.jsp">Home</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">category <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="mens.jsp">Mens</a></li>
-          <li><a href="womens.jsp">Womens</a></li>
-          <li><a href="kids.jsp">Kids</a></li>
-        </ul>
-      </li>
-      <li><a href="aboutus.jsp">about </a></li>
-      <li><a href="contact.jsp">contact </a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="signup.jsp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="login.jsp"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      //<a href="#"><i class="fa fa-shopping-cart fa-rotate-180">Cart</i> </a>
-      <li><a href=""><span class="glyphicons glyphicons-shopping-cart"></span> My Cart</a></li>
-    </ul>
-  </div>
-</nav>
-  -->
+  
 <div class="container">
 <div class="row vcenter">
 <div class="col-md-12 col-xs-12">
